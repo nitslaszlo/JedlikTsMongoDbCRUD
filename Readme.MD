@@ -1,17 +1,17 @@
-## Start/stop MongoDB service:
+## Start/stop MongoDB service from commad prompt:
 - net start MongoDB
 - net stop MongoDB
 
-## Enable security:
-> c:\Program Files\MongoDB\Server\4.0\bin\mongod.cfg
-> ...
-> security:
-> authorization: enabled
-> ...
+## Enable MongoDb security:
+> c:\Program Files\MongoDB\Server\4.0\bin\mongod.cfg<br>
+> ...<br>
+> security:<br>
+> authorization: enabled<br>
+> ...<br>
 
->db.createUser(
->{
+>db.createUser(<br>
+>{<br>
 >  user: "nits",
->  pwd: "Abc123456",
->  roles:["root"]
->})
+>  pwd: "Abc123456",<br>
+>  roles:["root"]<br>
+>})<br>
